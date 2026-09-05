@@ -11,7 +11,7 @@ Replace the legacy README screenshots with two original LearnLoop visual assets 
 - Style: dark navy background, blue-to-purple gradients, restrained cyan success accents, rounded cards, clean sans-serif typography.
 - Required content: LearnLoop wordmark; daily learning loop headline; task progress; knowledge mastery; due-review reminder; a RAG learning card; a compact weekly activity summary.
 - Text: Chinese UI labels, with English retained only for concise technical labels such as `RAG`.
-- Constraints: no `AgentCoach`, no `AC` monogram, no old navigation wording, no watermark, no fake personal data, and no overflowing or unreadable text.
+- Constraints: no former-project name or monogram, no outdated navigation wording, no watermark, no fake personal data, and no overflowing or unreadable text.
 
 ## Asset 2: System architecture
 

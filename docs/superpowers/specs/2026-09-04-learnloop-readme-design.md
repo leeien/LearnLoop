@@ -31,6 +31,6 @@ Replace the report-style README with a developer-friendly open-source product pa
 ## Verification
 
 - Markdown image paths resolve to `UI.png` and `LearnLoop.png`.
-- README contains no `AgentCoach` or prior deployment URLs.
+- README contains no former-project name or prior deployment URLs.
 - Backend branding test and frontend production build continue to pass.
 - The rewritten README is committed and pushed to `main`.

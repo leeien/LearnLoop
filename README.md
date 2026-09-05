@@ -8,8 +8,8 @@
 
 LearnLoop 面向希望持续学习、但不想把计划和复盘分散在多个工具中的个人学习者。它把“今天学什么”“是否真的掌握”“下次什么时候复习”串成一条可追踪的路径：
 
-- **计划有依据**：Goal Planner 参考到期 Memory 与掌握度生成今日目标。
-- **检测紧跟学习**：完成 Agent 知识任务后生成 3～5 个问题，并按 Rubric 评估回答。
+- **计划有依据**：Goal Planner 参考到期的长期记忆（Memory）与掌握度生成今日目标。
+- **检测紧跟学习**：完成 Agent 知识任务后生成 3～5 个问题，并按评分量表（Rubric）评估回答。
 - **记忆服务行动**：Memory Curator 提取薄弱点、错因和收获，Mastery Service 更新掌握度与复习时间。
 - **过程可复盘**：每日 Reflection 汇总任务、检测、Memory、LeetCode 记录和掌握度变化。
 - **边界清晰可审计**：Learning Harness 记录关键事件；Trace 展示流程，但不展示模型隐藏思维链。
@@ -43,7 +43,7 @@ flowchart LR
 
 ### 安装依赖
 
-在仓库根目录执行：
+以下命令适用于 Windows PowerShell：
 
 ```powershell
 cd backend
@@ -55,6 +55,10 @@ Copy-Item .env.example .env
 cd ..\\frontend
 npm install
 ```
+
+在 macOS 或 Linux 中，将 `py -3.10` 改为 `python3.10`，将
+`.\\.venv\\Scripts\\Activate.ps1` 改为 `source .venv/bin/activate`，并将
+`Copy-Item .env.example .env` 改为 `cp .env.example .env`。
 
 ### 配置并启动
 
@@ -73,7 +77,7 @@ cd frontend
 npm run dev
 ```
 
-打开 `http://127.0.0.1:5173`。后端 API 默认运行在 `http://127.0.0.1:8000`，接口文档位于 `http://127.0.0.1:8000/docs`，健康检查为 `http://127.0.0.1:8000/api/health`。
+打开前端 [http://127.0.0.1:5173](http://127.0.0.1:5173)。后端 API 默认运行在 [http://127.0.0.1:8000](http://127.0.0.1:8000)，接口文档位于 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)，健康检查为 [http://127.0.0.1:8000/api/health](http://127.0.0.1:8000/api/health)。
 
 ### 第一次使用
 
@@ -200,7 +204,7 @@ API Key、Token、Authorization、密码、系统 Prompt 和环境变量会自�
 
 ## 贡献
 
-欢迎围绕学习闭环、可审计性和安全边界提交问题单或合并请求。建议先说明问题场景和复现步骤，再提出与现有分层相匹配的改动；涉及 API、数据模型或 Agent 行为时，请同步补充测试和文档。提交前至少运行后端测试与前端生产构建：
+欢迎围绕学习闭环、可审计性和安全边界提交问题单或合并请求。贡献流程、验证要求和提交边界见 [贡献指南](./CONTRIBUTING.md)。提交前至少运行后端测试与前端生产构建：
 
 ```powershell
 cd backend
@@ -212,4 +216,4 @@ npm run build
 
 ## 许可证
 
-当前仓库尚未声明具体开源许可证。除非仓库新增正式许可证文件，否则请不要将代码用于需要明确授权的分发或商业场景；贡献者提交内容也应确保拥有相应权利。
+当前仓库尚未声明具体开源许可证。除非仓库新增正式许可证文件，否则请不要将代码用于需要明确授权的分发或商业场景；贡献者提交内容也应确保拥有相应权利。对外公开协作前，请先选择许可证并添加 `LICENSE` 文件。

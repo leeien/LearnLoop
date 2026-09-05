@@ -20,7 +20,7 @@ export function AppLayout() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
           <NavLink to="/" className="flex items-center gap-3">
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-slate-950 text-sm font-bold text-cyan-300">
-              AC
+              LL
             </span>
             <div>
               <p className="text-sm font-semibold leading-none">LearnLoop</p>

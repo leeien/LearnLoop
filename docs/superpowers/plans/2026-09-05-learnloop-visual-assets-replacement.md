@@ -4,15 +4,15 @@
 
 **Goal:** Replace the two legacy README visual assets with a user-selected LearnLoop UI and a project-accurate architecture diagram, then publish the verified result.
 
-**Architecture:** Keep the existing README image links unchanged: `UI.png` remains the product-interface asset and `LearnLoop.png` remains the system architecture asset. Edit the selected UI screenshot only enough to replace its old `AC` badge with a LearnLoop `LL` mark; use the approved generated architecture diagram because its layers map to the repository's frontend, API, domain Agent, capability, and data components.
+**Architecture:** Keep the existing README image links unchanged: `UI.png` remains the product-interface asset and `LearnLoop.png` remains the system architecture asset. Edit the selected UI screenshot only enough to replace its previous badge with a LearnLoop `LL` mark; use the approved generated architecture diagram because its layers map to the repository's frontend, API, domain Agent, capability, and data components.
 
 **Tech Stack:** PNG assets, README Markdown, GitHub Actions-independent local validation, Git/GitHub.
 
 ## Global Constraints
 
 - Preserve the existing README paths `./UI.png` and `./LearnLoop.png`; do not change prose or links unless validation shows an incorrect reference.
-- The UI must retain the user-selected dashboard composition while replacing the `AC` monogram with `LL`.
-- Neither asset may contain `AgentCoach`, an `AC` monogram, API keys, watermarks, QR codes, or third-party company logos.
+- The UI must retain the user-selected dashboard composition while replacing the previous monogram with `LL`.
+- Neither asset may contain former-project branding, API keys, watermarks, QR codes, or third-party company logos.
 - The architecture must represent React, FastAPI, five domain Agents, LLM/RAG/Memory, MCP tools, SQLite, Redis, Chroma, and the evaluation Harness.
 - Do not push either binary asset until the user has approved the previews.
 
@@ -32,13 +32,13 @@
 
 Run: open `C:\Users\LEE_LA~1\AppData\Local\Temp\codex-clipboard-201fed15-01a2-4a5f-9f2e-d9f626315188.png` with the image viewer.
 
-Expected: the top-left brand reads `LearnLoop` and the only legacy visual identity is the dark rounded `AC` badge.
+Expected: the top-left brand reads `LearnLoop` and the only previous visual identity is a dark rounded badge.
 
 - [ ] **Step 2: Generate an image edit that changes only the legacy mark**
 
-Use image generation with the screenshot as the reference and this instruction: `Keep this dashboard screenshot pixel-faithful. Replace only the dark rounded top-left AC badge with a matching dark rounded LL badge, rendered in cyan. Keep LearnLoop, every navigation label, card, chart, typography, layout, and all other pixels unchanged. Do not add a watermark or logo.`
+Use image generation with the screenshot as the reference and this instruction: `Keep this dashboard screenshot pixel-faithful. Replace only the dark rounded top-left badge with a matching dark rounded LL badge, rendered in cyan. Keep LearnLoop, every navigation label, card, chart, typography, layout, and all other pixels unchanged. Do not add a watermark or logo.`
 
-Expected: a preview with `LL`, not `AC`, and no unintended content changes.
+Expected: a preview with `LL` and no unintended content changes.
 
 - [ ] **Step 3: Obtain user approval before replacement**
 

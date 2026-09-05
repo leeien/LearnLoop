@@ -75,7 +75,7 @@ $required = '为什么选择 LearnLoop','核心工作流','快速开始','配置
 $content = Get-Content -Raw README.md
 $missing = $required | Where-Object { $content -notmatch [regex]::Escape($_) }
 if ($missing) { throw "Missing headings: $($missing -join ', ')" }
-if ($content -match 'AgentCoach|agreeable-forest|gentlefield') { throw 'Legacy branding or deployment URL found.' }
+if ($content -match 'former_project_name|agreeable-forest|gentlefield') { throw 'Legacy branding or deployment URL found.' }
 if (-not (Test-Path UI.png) -or -not (Test-Path LearnLoop.png)) { throw 'README image asset missing.' }
 ```
 
